@@ -1,0 +1,28 @@
+.footer{
+    &__top{
+        background-color: $color-black;
+        padding: 30px 0;
+        .footer--title{
+            @include fontsize(15px, 700, $color-white);
+            line-height: rem(19);
+            text-transform: uppercase;
+            margin-bottom: rem(28);
+        }
+        .footerLinks{
+            li{
+                margin-bottom: rem(18);
+                // li:not(:last-child) {
+                //     margin-bottom: 0px;
+                // }    
+                .footerLinks__items{
+                    @include fontsize(14px, 300, $color-white);
+                    line-height: rem(17);
+                }
+            }  
+        }
+    }
+    &__bottom{
+        background-color:$primary;
+        padding: rem(17) 0;
+    }
+}  
